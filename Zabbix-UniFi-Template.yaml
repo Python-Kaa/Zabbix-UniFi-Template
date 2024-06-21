@@ -1,0 +1,641 @@
+zabbix_export:
+  version: '6.4'
+  template_groups:
+    - uuid: 7df96b18c230490a9a0a9e2307226338
+      name: Templates
+  host_groups:
+    - uuid: cf4d389216874321b9a6cee1a4ea73d5
+      name: 'UniFi Device Discovery'
+  templates:
+    - uuid: b54435969e5043a19a44b1c3319d9ec5
+      template: 'UniFi Data Template'
+      name: 'UniFi Data Template'
+      description: |
+        Model	Type	SKU	Name
+        BZ2	uap	UAP	Access Point
+        BZ2LR	uap	UAP-LR	Access Point LR
+        p2N	uap	PICOM2HP	PicoStation M2
+        S216150	usw	US-16-150W	Switch 16 (150W)
+        S224250	usw	US-24-250W	Switch 24 (250W)
+        S224500	usw	US-24-500W	Switch 24 (500W)
+        S248500	usw	US-48-500W	Switch 48 (500W)
+        S248750	usw	US-48-750W	Switch 48 (750W)
+        S28150	usw	US-8-150W	Switch 8 (150W)
+        U2HSR	uap	UAP-Outdoor+	Access Point Outdoor+
+        U2IW	uap	UAP-IW	Access Point In Wall
+        U2L48	uap	UAP-LR	Access Point LR
+        U2Lv2	uap	UAP-LRv2	Access Point LR v2
+        U2M	uap	UAP-Mini	Access Point Mini
+        U2O	uap	UAP-Outdoor	Access Point Outdoor
+        U2S48	uap	UAP	Access Point
+        U2Sv2	uap	UAPv2	Access Point v2
+        U5O	uap	UAP-Outdoor5	Access Point Outdoor 5G
+        U7E	uap	UAP-AC	Access Point AC
+        U7EDU	uap	UAP-AC-EDU	Access Point AC EDU
+        U7Ev2	uap	UAP-AC	Access Point AC v2
+        U7HD	uap	UAP-AC-HD	Access Point HD
+        U7IW	uap	UAP-AC-IW	Access Point AC In Wall
+        U7IWP	uap	UAP-AC-IW-Pro	Access Point AC In Wall Pro
+        U7LT	uap	UAP-AC-Lite	Access Point AC Lite
+        U7MP	uap	UAP-AC-M-Pro	Access Point AC Mesh Pro
+        U7NHD	uap	UAP-nanoHD	Access Point nanoHD
+        U7O	uap	UAP-AC-Outdoor	Access Point AC Outdoor
+        U7P	uap	UAP-Pro	Access Point Pro
+        U7PG2	uap	UAP-AC-Pro	Access Point AC Pro
+        U7SHD	uap	UAP-AC-SHD	Access Point SHD
+        UAE6	uap	U6-Extender	6 Extender
+        UAIW6	uap	U6-IW	Access Point 6 In Wall
+        UAL6	uap	U6-Lite	Access Point 6 Lite
+        UALR6	uap	U6-LR-EA	Access Point 6 LR
+        UALR6v2	uap	U6-LR	Access Point 6 LR
+        UALR6v3	uap	U6-LR	Access Point 6 LR
+        UAM6	uap	U6-Mesh	Access Point 6 Mesh
+        UAP6	uap	U6-LR	Access Point 6 LR
+        UASXG	uas	UAS-XG	Application Server XG
+        UBB	ubb	UBB	Building-to-Building Bridge
+        UCK	uck	UCK	Cloud Key
+        UCKG2	uck	UCK-G2	Cloud Key Gen2
+        UCKP	uck	UCK-G2-Plus	Cloud Key Gen2 Plus
+        UCK-v2	uck	UCK	Cloud Key
+        UCK-v3	uck	UCK	Cloud Key
+        UCMSH	uap	UAP-XG-Mesh	Access Point MeshXG
+        UCXG	uap	UAP-XG	Access Point XG
+        UDC48X6	usw	USW-Leaf	Switch Leaf
+        UDM	udm	UDM	Dream Machine
+        UDMB	uap	UAP-BeaconHD	Access Point BeaconHD
+        UDMPRO	udm	UDM-Pro	Dream Machine Pro
+        UDMSE	udm	UDM-SE	Dream Machine Pro SE
+        UFLHD	uap	UAP-FlexHD	Access Point Flex HD
+        UGW4	ugw	USG-Pro-4	Security Gateway 4P
+        UGWHD4	ugw	USG	Security Gateway HD
+        UGWXG	ugw	USG-XG-8	Security Gateway XG 8
+        UHDIW	uap	UAP-IW-HD	Access Point In-Wall HD
+        ULTE	uap	U-LTE	LTE
+        ULTEPEU	uap	U-LTE-Pro	LTE Pro
+        ULTEPUS	uap	U-LTE-Pro	LTE Pro
+        UP1	uap	USP-Plug	SmartPower Plug
+        UP4	uph	UVP-X	Phone X
+        UP5	uph	UVP	Phone
+        UP5c	uph	UVP	Phone
+        UP5t	uph	UVP-Pro	Phone Pro
+        UP5tc	uph	UVP-Pro	Phone Pro
+        UP6	uap	USP-Strip	SmartPower Strip
+        UP7	uph	UVP-Executive	Phone Executive
+        UP7c	uph	UVP-Executive	Phone Executive
+        US24	usw	US-24-G1	Switch 24
+        US24P250	usw	US-24-250W	Switch 24 PoE (250W)
+        US24P500	usw	US-24-500W	Switch 24 PoE (500W)
+        US24PL2	usw	US-L2-24-PoE	Switch 24 L2 PoE
+        US24PRO	usw	USW-Pro-24-PoE	Switch Pro 24 PoE
+        US24PRO2	usw	USW-Pro-24	Switch Pro 24
+        US48	usw	US-48-G1	Switch 48
+        US48P500	usw	US-48-500W	Switch 48 PoE (500W)
+        US48P750	usw	US-48-750W	Switch 48 PoE (750W)
+        US48PL2	usw	US-L2-48-PoE	Switch 48 L2 PoE
+        US48PRO	usw	USW-Pro-48-PoE	Switch Pro 48 PoE
+        US48PRO2	usw	USW-Pro-48	Switch Pro 48
+        US624P	usw	UniFi6 Switch 24	Switch Enterprise 24 PoE
+        US6XG150	usw	US-XG-6PoE	Switch 6XG PoE (150W)
+        US8	usw	US-8	Switch 8
+        US8P60	usw	US-8-60W	Switch 8 PoE (60W)
+        USC8	usw	US-8	Switch 8
+        USC8P150	usw	US-8-150W	Switch 8 PoE
+        USC8P450	usw	USW-Industrial	Switch Industrial
+        USC8P60	usw	US-8-60W	Switch 8 (60W)
+        USF5P	usw	USW-Flex	Switch Flex
+        USL16LP	usw	USW-Lite-16-PoE	Switch Lite 16 PoE
+        USL16P	usw	USW-16-PoE	Switch 16 PoE
+        USL24	usw	USW-24-G2	Switch 24
+        USL24P	usw	USW-24-PoE	Swith 24 PoE
+        USL48	usw	USW-48-G2	Switch 48
+        USL48P	usw	USW-48-PoE	Switch 48 PoE
+        USL8A	usw	USW-Aggregation	Switch Aggregation
+        USL8LP	usw	USW-Lite-8-PoE	Switch Lite 8 PoE
+        USL8MP	usw	USW-Mission-Critical	Switch Mission Critical
+        USMINI	usw	USW-Flex-Mini	USW Flex Mini
+        USPPDUP	usw	USP-Pro-PDU	SmartPower Pro PDU
+        USPRPS	usw	USP-RPS	Redundant Power System
+        USXG	usw	US-16-XG	Switch 16XG
+        UXBSDM	uap	UWB-XG-BK	WiFi BaseStation XG
+        UXGPRO	uxg	UXG-Pro	Next-Generation Gateway Pro
+        UXSDM	uap	UWB-XG	WiFi BaseStation XG
+      groups:
+        - name: Templates
+      items:
+        - uuid: ca48f16b15244a7dbe5dbb24157d17b5
+          name: Adopted
+          type: TRAP
+          key: 'unifi.data[adopted]'
+          delay: '0'
+          valuemap:
+            name: Logical
+          preprocessing:
+            - type: STR_REPLACE
+              parameters:
+                - 'True'
+                - '1'
+            - type: STR_REPLACE
+              parameters:
+                - 'False'
+                - '0'
+          triggers:
+            - uuid: 113f71636f0b49f2bcc2e7ae2ab3c3d6
+              expression: 'last(/UniFi Data Template/unifi.data[adopted])=0'
+              name: 'Device not Adopted'
+              opdata: 'Adopt status - {ITEM.LASTVALUE}'
+              priority: INFO
+        - uuid: b8e64fc643534b248594f26798ed4862
+          name: 'Device type'
+          type: TRAP
+          key: 'unifi.data[devicetype]'
+          delay: '0'
+          trends: '0'
+          value_type: CHAR
+          inventory_link: TYPE
+        - uuid: 66f3d388bee946a9b6b12e4cbd03fc4a
+          name: 'Last Seen'
+          type: TRAP
+          key: 'unifi.data[last_seen]'
+          delay: '0'
+          units: unixtime
+        - uuid: 2a775319324c476fbbd361c1037971d1
+          name: Model
+          type: TRAP
+          key: 'unifi.data[model]'
+          delay: '0'
+          trends: '0'
+          value_type: CHAR
+          valuemap:
+            name: 'Device Model'
+        - uuid: 3cccb49db836497e8bf3141932a7857f
+          name: 'Model in EOL'
+          type: TRAP
+          key: 'unifi.data[model_in_eol]'
+          delay: '0'
+          valuemap:
+            name: Logical
+          preprocessing:
+            - type: STR_REPLACE
+              parameters:
+                - 'True'
+                - '1'
+            - type: STR_REPLACE
+              parameters:
+                - 'False'
+                - '0'
+          triggers:
+            - uuid: ebbe127947b24217a5ccb723295f1b00
+              expression: 'last(/UniFi Data Template/unifi.data[model_in_eol])=1'
+              name: 'Device in EOL'
+              priority: WARNING
+        - uuid: 3db530b2abd44815b0a31068f27f575b
+          name: Satisfaction
+          type: TRAP
+          key: 'unifi.data[satisfaction]'
+          delay: '0'
+          status: DISABLED
+          value_type: FLOAT
+        - uuid: 7bab070e74e74009b32be3dea91eedb3
+          name: 'Serial Number'
+          type: TRAP
+          key: 'unifi.data[serial]'
+          delay: '0'
+          trends: '0'
+          value_type: CHAR
+        - uuid: 4f393f1db8194c70b9ed79d15094f210
+          name: 'Device State'
+          type: TRAP
+          key: 'unifi.data[state]'
+          delay: '0'
+          valuemap:
+            name: 'Device State'
+          triggers:
+            - uuid: 43aa78e854344de6a66bfec7158b51af
+              expression: 'last(/UniFi Data Template/unifi.data[state],#2)=0'
+              name: 'Device disconnected'
+              priority: HIGH
+            - uuid: bb127d08b9c64b40965f1ea61c64374a
+              expression: 'last(/UniFi Data Template/unifi.data[state])>2'
+              name: 'Device not in "Available" state'
+              opdata: '{ITEM.LASTVALUE}'
+              priority: INFO
+        - uuid: 88b4f308d6b54b968a760860c1924b07
+          name: 'Firmware update available'
+          type: TRAP
+          key: 'unifi.data[upgradable]'
+          delay: '0'
+          trends: '0'
+          value_type: CHAR
+          triggers:
+            - uuid: 577429e64d3f46aba7f8926d4ed9a57c
+              expression: 'find(/UniFi Data Template/unifi.data[upgradable],,"like","No")=0'
+              name: 'Firmware upgrade available'
+              opdata: '{ITEM.LASTVALUE}'
+        - uuid: 1e019fec1d0141b0b5fc0cd6d14fd0bc
+          name: Uptime
+          type: TRAP
+          key: 'unifi.data[uptime]'
+          delay: '0'
+          units: s
+          triggers:
+            - uuid: 32efd3658395485b8012c8d615a4aa7c
+              expression: 'last(/UniFi Data Template/unifi.data[uptime])<10m'
+              name: 'Device has been restarted'
+              opdata: '{ITEM.LASTVALUE}'
+              priority: WARNING
+        - uuid: a37d8b33535240f9afc667ef6be19ea3
+          name: Clients
+          type: TRAP
+          key: 'unifi.data[usercount]'
+          delay: '0'
+      valuemaps:
+        - uuid: 568e4d84a7aa48e28c7d4ec35271ca80
+          name: 'Device Model'
+          mappings:
+            - value: BZ2
+              newvalue: 'Access Point'
+            - value: BZ2LR
+              newvalue: 'Access Point Long-Range'
+            - value: p2N
+              newvalue: 'PicoStation M2 HP'
+            - value: S216150
+              newvalue: 'Switch 16 PoE (150 W)'
+            - value: S224250
+              newvalue: 'Switch 24 PoE (250 W)'
+            - value: S224500
+              newvalue: 'Switch 24 PoE (500 W)'
+            - value: S248500
+              newvalue: 'Switch 48 PoE (500 W)'
+            - value: S248750
+              newvalue: 'Switch 48 PoE (750 W)'
+            - value: S28150
+              newvalue: 'Switch 8 PoE (150 W)'
+            - value: U2HSR
+              newvalue: 'Access Point Outdoor+'
+            - value: U2IW
+              newvalue: 'Access Point In-Wall'
+            - value: U2L48
+              newvalue: 'Access Point Long-Range'
+            - value: U2Lv2
+              newvalue: 'Access Point Long-Range'
+            - value: U2M
+              newvalue: 'Access Point Mini'
+            - value: U2O
+              newvalue: 'Access Point Outdoor'
+            - value: U2S48
+              newvalue: 'Access Point'
+            - value: U2Sv2
+              newvalue: 'Access Point'
+            - value: U5O
+              newvalue: 'Access Point Outdoor 5'
+            - value: U6ENT
+              newvalue: 'Access Point WiFi 6 Enterprise'
+            - value: U6EXT
+              newvalue: 'Access Point WiFi 6 Extender'
+            - value: U6IW
+              newvalue: 'Access Point WiFi 6 In-Wall'
+            - value: U6M
+              newvalue: 'Access Point WiFi 6 Mesh'
+            - value: U7E
+              newvalue: 'Access Point AC'
+            - value: U7EDU
+              newvalue: 'Access Point AC EDU'
+            - value: U7Ev2
+              newvalue: 'Access Point AC'
+            - value: U7HD
+              newvalue: 'Access Point AC HD'
+            - value: U7IW
+              newvalue: 'Access Point AC In-Wall'
+            - value: U7IWP
+              newvalue: 'Access Point AC In-Wall Pro'
+            - value: U7LR
+              newvalue: 'Access Point AC Long-Range'
+            - value: U7LT
+              newvalue: 'Access Point AC Lite'
+            - value: U7MP
+              newvalue: 'Access Point AC Mesh Pro'
+            - value: U7MSH
+              newvalue: 'Access Point AC Mesh'
+            - value: U7NHD
+              newvalue: 'Access Point nanoHD'
+            - value: U7O
+              newvalue: 'Access Point AC Outdoor'
+            - value: U7P
+              newvalue: 'Access Point AC Pro'
+            - value: U7PG2
+              newvalue: 'Access Point AC Pro'
+            - value: U7SHD
+              newvalue: 'Access Point AC SHD'
+            - value: UAE6
+              newvalue: 'Access Point WiFi 6 Extender'
+            - value: UAIW6
+              newvalue: 'Access Point WiFi 6 In-Wall'
+            - value: UAL6
+              newvalue: 'Access Point WiFi 6 Lite'
+            - value: UALR6
+              newvalue: 'Access Point WiFi 6 Long-Range'
+            - value: UALR6v2
+              newvalue: 'Access Point WiFi 6 Long-Range'
+            - value: UALR6v3
+              newvalue: 'Access Point WiFi 6 Long-Range'
+            - value: UAM6
+              newvalue: 'Access Point WiFi 6 Mesh'
+            - value: UAP6
+              newvalue: 'Access Point WiFi 6 Long-Range'
+            - value: UAP6MP
+              newvalue: 'Access Point WiFi 6 Pro'
+            - value: UASXG
+              newvalue: 'Application Server XG'
+            - value: UBB
+              newvalue: 'Building-to-Building Bridge'
+            - value: UBBXG
+              newvalue: 'Building-to-Building Bridge XG'
+            - value: UCK
+              newvalue: 'Cloud Key'
+            - value: UCKG2
+              newvalue: 'Cloud Key Gen2'
+            - value: UCKP
+              newvalue: 'Cloud Key Gen2 Plus'
+            - value: UCK-v2
+              newvalue: 'Cloud Key'
+            - value: UCK-v3
+              newvalue: 'Cloud Key'
+            - value: UCMSH
+              newvalue: 'Access Point Mesh XG'
+            - value: UCXG
+              newvalue: 'Access Point XG'
+            - value: UDC48X6
+              newvalue: 'Switch Leaf'
+            - value: UDM
+              newvalue: 'Dream Machine'
+            - value: UDMB
+              newvalue: 'Access Point BeaconHD'
+            - value: UDMPRO
+              newvalue: 'Dream Machine Pro'
+            - value: UDMPROSE
+              newvalue: 'Dream Machine Special Edition'
+            - value: UDR
+              newvalue: 'Dream Router'
+            - value: UDW
+              newvalue: 'Dream Wall'
+            - value: UDWPRO
+              newvalue: 'Dream Wall Pro'
+            - value: UFLHD
+              newvalue: 'Access Point FlexHD'
+            - value: UGW3
+              newvalue: 'Security Gateway'
+            - value: UGW4
+              newvalue: 'Security Gateway Pro'
+            - value: UGWHD4
+              newvalue: 'Security Gateway'
+            - value: UGWXG
+              newvalue: 'Security Gateway XG'
+            - value: UHDIW
+              newvalue: 'Access Point In-Wall HD'
+            - value: ULTE
+              newvalue: 'UniFi LTE'
+            - value: ULTEPEU
+              newvalue: 'UniFi LTE Pro'
+            - value: ULTEPUS
+              newvalue: 'UniFi LTE Pro'
+            - value: UP1
+              newvalue: 'SmartPower Plug'
+            - value: UP4
+              newvalue: Phone
+            - value: UP5
+              newvalue: Phone
+            - value: UP5c
+              newvalue: Phone
+            - value: UP5t
+              newvalue: 'Phone Professional'
+            - value: UP5tc
+              newvalue: 'Phone Professional'
+            - value: UP6
+              newvalue: 'SmartPower Strip (6 ports)'
+            - value: UP7
+              newvalue: 'Phone Executive'
+            - value: UP7c
+              newvalue: 'Phone Executive'
+            - value: US16P150
+              newvalue: 'Switch 16 PoE (150 W)'
+            - value: US24
+              newvalue: 'Switch 24'
+            - value: US24P250
+              newvalue: 'Switch 24 PoE (250 W)'
+            - value: US24P500
+              newvalue: 'Switch 24 PoE (500 W)'
+            - value: US24PL2
+              newvalue: 'Switch 24 PoE'
+            - value: US24PRO
+              newvalue: 'Switch Pro 24 PoE'
+            - value: US24PRO2
+              newvalue: 'Switch Pro 24'
+            - value: US48
+              newvalue: 'Switch 48'
+            - value: US48P500
+              newvalue: 'Switch 48 PoE (500 W)'
+            - value: US48P750
+              newvalue: 'Switch 48 PoE (750 W)'
+            - value: US48PL2
+              newvalue: 'Switch 48 PoE'
+            - value: US48PRO
+              newvalue: 'Switch Pro 48 PoE'
+            - value: US48PRO2
+              newvalue: 'Switch Pro 48'
+            - value: US624P
+              newvalue: 'Switch Enterprise 24 PoE'
+            - value: US648P
+              newvalue: 'Switch Enterprise 48 PoE'
+            - value: US68P
+              newvalue: 'Switch Enterprise 8 PoE'
+            - value: US6XG150
+              newvalue: 'Switch 6 XG PoE'
+            - value: US8
+              newvalue: 'Switch 8'
+            - value: US8P150
+              newvalue: 'Switch 8 PoE (150 W)'
+            - value: US8P60
+              newvalue: 'Switch 8 (60 W)'
+            - value: USAGGPRO
+              newvalue: 'Switch Aggregation Pro'
+            - value: USC8
+              newvalue: 'Switch 8'
+            - value: USC8P150
+              newvalue: 'Switch 8 PoE (150 W)'
+            - value: USC8P450
+              newvalue: 'Switch Industrial'
+            - value: USC8P60
+              newvalue: 'Switch 8 (60 W)'
+            - value: USF5P
+              newvalue: 'Switch Flex'
+            - value: USFXG
+              newvalue: 'Switch Flex XG'
+            - value: USL16LP
+              newvalue: 'Switch Lite 16 PoE'
+            - value: USL16P
+              newvalue: 'Switch 16 PoE'
+            - value: USL24
+              newvalue: 'Switch 24'
+            - value: USL24P
+              newvalue: 'Switch 24 PoE'
+            - value: USL48
+              newvalue: 'Switch 48'
+            - value: USL48P
+              newvalue: 'Switch 48 PoE'
+            - value: USL8A
+              newvalue: 'Switch Aggregation'
+            - value: USL8LP
+              newvalue: 'Switch Lite 8 PoE'
+            - value: USL8MP
+              newvalue: 'Switch Mission Critical'
+            - value: USMINI
+              newvalue: 'Switch Flex Mini'
+            - value: USPPDUP
+              newvalue: 'SmartPower PDU Pro'
+            - value: USPRPS
+              newvalue: 'SmartPower Redundant Power System'
+            - value: USXG
+              newvalue: 'Switch XG 16'
+            - value: USXG24
+              newvalue: 'Switch Enterprise XG 24'
+            - value: UXBSDM
+              newvalue: 'WiFi BaseStation XG'
+            - value: UXGPRO
+              newvalue: 'Next-Generation Gateway Pro'
+            - value: UXSDM
+              newvalue: 'WiFi BaseStation XG'
+        - uuid: c215a9e940144bb6aa1c4da68cc1fcbc
+          name: 'Device State'
+          mappings:
+            - value: '0'
+              newvalue: Disconnected
+            - value: '1'
+              newvalue: Available
+            - value: '2'
+              newvalue: 'Pending Adoption'
+            - value: '4'
+              newvalue: Updating
+            - value: '5'
+              newvalue: Provisioning
+            - value: '6'
+              newvalue: Isolated
+        - uuid: 13ff542825454825aab1729e91a20b1d
+          name: Logical
+          mappings:
+            - value: '1'
+              newvalue: 'Yes'
+            - value: '0'
+              newvalue: 'No'
+    - uuid: e77c959a1e0c4364a17b773a21cbd8b7
+      template: 'UniFi Discovery and Collection Template'
+      name: 'UniFi Discovery and Collection Template'
+      description: 'Можно либо руками в макросах указать адрес сервера, либо в правиле обнаружения заменить макрос чем-то вроде {HOST.CONN}'
+      groups:
+        - name: Templates
+      items:
+        - uuid: eb8d5ef22bbc423ea829254408448a70
+          name: 'UniFi Site Discover Source'
+          type: SCRIPT
+          key: 'unifi.site.discover[source]'
+          delay: 8h
+          trends: '0'
+          value_type: CHAR
+          params: |
+            try {
+               var params = JSON.parse(value),
+               req = new HttpRequest(),
+               fields = {},
+               resp,
+               server = params.server,
+               port = params.port;
+            
+               req.addHeader('Content-Type: application/json');
+               req.addHeader('Accept: application/json');
+               fields.username = params.username;
+               fields.password = params.password;
+            
+               req.post("https://" + server + ":" + port + "/api/login", JSON.stringify(fields));
+               resp = req.get("https://" + server + ":" + port + "/api/self/sites");
+               req.post("https://" + server + ":" + port + "/api/logout");
+               return resp;
+            //   return req.getStatus();
+            }
+            catch (error) {
+               return {'error.name' : error.name, 'error.message' : error.message}
+            }
+          preprocessing:
+            - type: JSONPATH
+              parameters:
+                - $.data
+          parameters:
+            - name: password
+              value: '{$UNIFI_PASSWORD}'
+            - name: port
+              value: '{$UNIFI_PORT}'
+            - name: server
+              value: '{$UNIFI_SERVER}'
+            - name: username
+              value: '{$UNIFI_USERNAME}'
+          tags:
+            - tag: Application
+              value: UniFi
+      discovery_rules:
+        - uuid: 4c9a1113c66d4ae99566b98097cce7ce
+          name: 'Unifi Devices Discover'
+          key: 'unifi.device.discover[{$UNIFI_SERVER},{$UNIFI_PORT},{$UNIFI_USERNAME},{$UNIFI_PASSWORD}]'
+          delay: 8h
+          lifetime: 7d
+          host_prototypes:
+            - uuid: be151c3e28e84e499ded0c65e909e1d4
+              host: 'UniFi_{#DEVICEID}'
+              name: '{#DEVICENAME} ({#DEVICEMAC})'
+              group_links:
+                - group:
+                    name: 'UniFi Device Discovery'
+              group_prototypes:
+                - name: '{#SITEDESC}'
+              templates:
+                - name: 'UniFi Data Template'
+              tags:
+                - tag: Application
+                  value: UniFi
+              custom_interfaces: 'YES'
+              interfaces:
+                - type: SNMP
+                  ip: '{#DEVICEIP}'
+                  port: '161'
+                  details:
+                    community: '{$SNMP_COMMUNITY}'
+              inventory_mode: AUTOMATIC
+        - uuid: a13337994ccb46d3bc223ac9286f065a
+          name: 'UniFi Site Discover'
+          type: DEPENDENT
+          key: unifi.site.discover
+          delay: '0'
+          lifetime: 7d
+          item_prototypes:
+            - uuid: bb0ea80b19d0431e825053c9867a08e1
+              name: 'Unifi Site - {#SITE_DESC}'
+              key: 'unifi.device.data[{$UNIFI_SERVER},{$UNIFI_PORT},{$UNIFI_USERNAME},{$UNIFI_PASSWORD},{#SITE_NAME}]'
+              delay: 5m
+              history: 7d
+              units: devices
+              tags:
+                - tag: Application
+                  value: UniFi
+          master_item:
+            key: 'unifi.site.discover[source]'
+          lld_macro_paths:
+            - lld_macro: '{#SITE_DESC}'
+              path: $.desc
+            - lld_macro: '{#SITE_NAME}'
+              path: $.name
+      macros:
+        - macro: '{$UNIFI_PASSWORD}'
+          type: SECRET_TEXT
+        - macro: '{$UNIFI_PORT}'
+          value: '8443'
+        - macro: '{$UNIFI_SERVER}'
+          value: 127.0.0.1
+        - macro: '{$UNIFI_USERNAME}'
+          value: root

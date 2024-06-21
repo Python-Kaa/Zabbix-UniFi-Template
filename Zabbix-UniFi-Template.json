@@ -1,0 +1,932 @@
+{
+    "zabbix_export": {
+        "version": "6.4",
+        "template_groups": [
+            {
+                "uuid": "7df96b18c230490a9a0a9e2307226338",
+                "name": "Templates"
+            }
+        ],
+        "host_groups": [
+            {
+                "uuid": "cf4d389216874321b9a6cee1a4ea73d5",
+                "name": "UniFi Device Discovery"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "b54435969e5043a19a44b1c3319d9ec5",
+                "template": "UniFi Data Template",
+                "name": "UniFi Data Template",
+                "description": "Model\tType\tSKU\tName\nBZ2\tuap\tUAP\tAccess Point\nBZ2LR\tuap\tUAP-LR\tAccess Point LR\np2N\tuap\tPICOM2HP\tPicoStation M2\nS216150\tusw\tUS-16-150W\tSwitch 16 (150W)\nS224250\tusw\tUS-24-250W\tSwitch 24 (250W)\nS224500\tusw\tUS-24-500W\tSwitch 24 (500W)\nS248500\tusw\tUS-48-500W\tSwitch 48 (500W)\nS248750\tusw\tUS-48-750W\tSwitch 48 (750W)\nS28150\tusw\tUS-8-150W\tSwitch 8 (150W)\nU2HSR\tuap\tUAP-Outdoor+\tAccess Point Outdoor+\nU2IW\tuap\tUAP-IW\tAccess Point In Wall\nU2L48\tuap\tUAP-LR\tAccess Point LR\nU2Lv2\tuap\tUAP-LRv2\tAccess Point LR v2\nU2M\tuap\tUAP-Mini\tAccess Point Mini\nU2O\tuap\tUAP-Outdoor\tAccess Point Outdoor\nU2S48\tuap\tUAP\tAccess Point\nU2Sv2\tuap\tUAPv2\tAccess Point v2\nU5O\tuap\tUAP-Outdoor5\tAccess Point Outdoor 5G\nU7E\tuap\tUAP-AC\tAccess Point AC\nU7EDU\tuap\tUAP-AC-EDU\tAccess Point AC EDU\nU7Ev2\tuap\tUAP-AC\tAccess Point AC v2\nU7HD\tuap\tUAP-AC-HD\tAccess Point HD\nU7IW\tuap\tUAP-AC-IW\tAccess Point AC In Wall\nU7IWP\tuap\tUAP-AC-IW-Pro\tAccess Point AC In Wall Pro\nU7LT\tuap\tUAP-AC-Lite\tAccess Point AC Lite\nU7MP\tuap\tUAP-AC-M-Pro\tAccess Point AC Mesh Pro\nU7NHD\tuap\tUAP-nanoHD\tAccess Point nanoHD\nU7O\tuap\tUAP-AC-Outdoor\tAccess Point AC Outdoor\nU7P\tuap\tUAP-Pro\tAccess Point Pro\nU7PG2\tuap\tUAP-AC-Pro\tAccess Point AC Pro\nU7SHD\tuap\tUAP-AC-SHD\tAccess Point SHD\nUAE6\tuap\tU6-Extender\t6 Extender\nUAIW6\tuap\tU6-IW\tAccess Point 6 In Wall\nUAL6\tuap\tU6-Lite\tAccess Point 6 Lite\nUALR6\tuap\tU6-LR-EA\tAccess Point 6 LR\nUALR6v2\tuap\tU6-LR\tAccess Point 6 LR\nUALR6v3\tuap\tU6-LR\tAccess Point 6 LR\nUAM6\tuap\tU6-Mesh\tAccess Point 6 Mesh\nUAP6\tuap\tU6-LR\tAccess Point 6 LR\nUASXG\tuas\tUAS-XG\tApplication Server XG\nUBB\tubb\tUBB\tBuilding-to-Building Bridge\nUCK\tuck\tUCK\tCloud Key\nUCKG2\tuck\tUCK-G2\tCloud Key Gen2\nUCKP\tuck\tUCK-G2-Plus\tCloud Key Gen2 Plus\nUCK-v2\tuck\tUCK\tCloud Key\nUCK-v3\tuck\tUCK\tCloud Key\nUCMSH\tuap\tUAP-XG-Mesh\tAccess Point MeshXG\nUCXG\tuap\tUAP-XG\tAccess Point XG\nUDC48X6\tusw\tUSW-Leaf\tSwitch Leaf\nUDM\tudm\tUDM\tDream Machine\nUDMB\tuap\tUAP-BeaconHD\tAccess Point BeaconHD\nUDMPRO\tudm\tUDM-Pro\tDream Machine Pro\nUDMSE\tudm\tUDM-SE\tDream Machine Pro SE\nUFLHD\tuap\tUAP-FlexHD\tAccess Point Flex HD\nUGW4\tugw\tUSG-Pro-4\tSecurity Gateway 4P\nUGWHD4\tugw\tUSG\tSecurity Gateway HD\nUGWXG\tugw\tUSG-XG-8\tSecurity Gateway XG 8\nUHDIW\tuap\tUAP-IW-HD\tAccess Point In-Wall HD\nULTE\tuap\tU-LTE\tLTE\nULTEPEU\tuap\tU-LTE-Pro\tLTE Pro\nULTEPUS\tuap\tU-LTE-Pro\tLTE Pro\nUP1\tuap\tUSP-Plug\tSmartPower Plug\nUP4\tuph\tUVP-X\tPhone X\nUP5\tuph\tUVP\tPhone\nUP5c\tuph\tUVP\tPhone\nUP5t\tuph\tUVP-Pro\tPhone Pro\nUP5tc\tuph\tUVP-Pro\tPhone Pro\nUP6\tuap\tUSP-Strip\tSmartPower Strip\nUP7\tuph\tUVP-Executive\tPhone Executive\nUP7c\tuph\tUVP-Executive\tPhone Executive\nUS24\tusw\tUS-24-G1\tSwitch 24\nUS24P250\tusw\tUS-24-250W\tSwitch 24 PoE (250W)\nUS24P500\tusw\tUS-24-500W\tSwitch 24 PoE (500W)\nUS24PL2\tusw\tUS-L2-24-PoE\tSwitch 24 L2 PoE\nUS24PRO\tusw\tUSW-Pro-24-PoE\tSwitch Pro 24 PoE\nUS24PRO2\tusw\tUSW-Pro-24\tSwitch Pro 24\nUS48\tusw\tUS-48-G1\tSwitch 48\nUS48P500\tusw\tUS-48-500W\tSwitch 48 PoE (500W)\nUS48P750\tusw\tUS-48-750W\tSwitch 48 PoE (750W)\nUS48PL2\tusw\tUS-L2-48-PoE\tSwitch 48 L2 PoE\nUS48PRO\tusw\tUSW-Pro-48-PoE\tSwitch Pro 48 PoE\nUS48PRO2\tusw\tUSW-Pro-48\tSwitch Pro 48\nUS624P\tusw\tUniFi6 Switch 24\tSwitch Enterprise 24 PoE\nUS6XG150\tusw\tUS-XG-6PoE\tSwitch 6XG PoE (150W)\nUS8\tusw\tUS-8\tSwitch 8\nUS8P60\tusw\tUS-8-60W\tSwitch 8 PoE (60W)\nUSC8\tusw\tUS-8\tSwitch 8\nUSC8P150\tusw\tUS-8-150W\tSwitch 8 PoE\nUSC8P450\tusw\tUSW-Industrial\tSwitch Industrial\nUSC8P60\tusw\tUS-8-60W\tSwitch 8 (60W)\nUSF5P\tusw\tUSW-Flex\tSwitch Flex\nUSL16LP\tusw\tUSW-Lite-16-PoE\tSwitch Lite 16 PoE\nUSL16P\tusw\tUSW-16-PoE\tSwitch 16 PoE\nUSL24\tusw\tUSW-24-G2\tSwitch 24\nUSL24P\tusw\tUSW-24-PoE\tSwith 24 PoE\nUSL48\tusw\tUSW-48-G2\tSwitch 48\nUSL48P\tusw\tUSW-48-PoE\tSwitch 48 PoE\nUSL8A\tusw\tUSW-Aggregation\tSwitch Aggregation\nUSL8LP\tusw\tUSW-Lite-8-PoE\tSwitch Lite 8 PoE\nUSL8MP\tusw\tUSW-Mission-Critical\tSwitch Mission Critical\nUSMINI\tusw\tUSW-Flex-Mini\tUSW Flex Mini\nUSPPDUP\tusw\tUSP-Pro-PDU\tSmartPower Pro PDU\nUSPRPS\tusw\tUSP-RPS\tRedundant Power System\nUSXG\tusw\tUS-16-XG\tSwitch 16XG\nUXBSDM\tuap\tUWB-XG-BK\tWiFi BaseStation XG\nUXGPRO\tuxg\tUXG-Pro\tNext-Generation Gateway Pro\nUXSDM\tuap\tUWB-XG\tWiFi BaseStation XG",
+                "groups": [
+                    {
+                        "name": "Templates"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "ca48f16b15244a7dbe5dbb24157d17b5",
+                        "name": "Adopted",
+                        "type": "TRAP",
+                        "key": "unifi.data[adopted]",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Logical"
+                        },
+                        "preprocessing": [
+                            {
+                                "type": "STR_REPLACE",
+                                "parameters": [
+                                    "True",
+                                    "1"
+                                ]
+                            },
+                            {
+                                "type": "STR_REPLACE",
+                                "parameters": [
+                                    "False",
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "113f71636f0b49f2bcc2e7ae2ab3c3d6",
+                                "expression": "last(/UniFi Data Template/unifi.data[adopted])=0",
+                                "name": "Device not Adopted",
+                                "opdata": "Adopt status - {ITEM.LASTVALUE}",
+                                "priority": "INFO"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "b8e64fc643534b248594f26798ed4862",
+                        "name": "Device type",
+                        "type": "TRAP",
+                        "key": "unifi.data[devicetype]",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "inventory_link": "TYPE"
+                    },
+                    {
+                        "uuid": "66f3d388bee946a9b6b12e4cbd03fc4a",
+                        "name": "Last Seen",
+                        "type": "TRAP",
+                        "key": "unifi.data[last_seen]",
+                        "delay": "0",
+                        "units": "unixtime"
+                    },
+                    {
+                        "uuid": "2a775319324c476fbbd361c1037971d1",
+                        "name": "Model",
+                        "type": "TRAP",
+                        "key": "unifi.data[model]",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "valuemap": {
+                            "name": "Device Model"
+                        }
+                    },
+                    {
+                        "uuid": "3cccb49db836497e8bf3141932a7857f",
+                        "name": "Model in EOL",
+                        "type": "TRAP",
+                        "key": "unifi.data[model_in_eol]",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Logical"
+                        },
+                        "preprocessing": [
+                            {
+                                "type": "STR_REPLACE",
+                                "parameters": [
+                                    "True",
+                                    "1"
+                                ]
+                            },
+                            {
+                                "type": "STR_REPLACE",
+                                "parameters": [
+                                    "False",
+                                    "0"
+                                ]
+                            }
+                        ],
+                        "triggers": [
+                            {
+                                "uuid": "ebbe127947b24217a5ccb723295f1b00",
+                                "expression": "last(/UniFi Data Template/unifi.data[model_in_eol])=1",
+                                "name": "Device in EOL",
+                                "priority": "WARNING"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "3db530b2abd44815b0a31068f27f575b",
+                        "name": "Satisfaction",
+                        "type": "TRAP",
+                        "key": "unifi.data[satisfaction]",
+                        "delay": "0",
+                        "status": "DISABLED",
+                        "value_type": "FLOAT"
+                    },
+                    {
+                        "uuid": "7bab070e74e74009b32be3dea91eedb3",
+                        "name": "Serial Number",
+                        "type": "TRAP",
+                        "key": "unifi.data[serial]",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR"
+                    },
+                    {
+                        "uuid": "4f393f1db8194c70b9ed79d15094f210",
+                        "name": "Device State",
+                        "type": "TRAP",
+                        "key": "unifi.data[state]",
+                        "delay": "0",
+                        "valuemap": {
+                            "name": "Device State"
+                        },
+                        "triggers": [
+                            {
+                                "uuid": "43aa78e854344de6a66bfec7158b51af",
+                                "expression": "last(/UniFi Data Template/unifi.data[state],#2)=0",
+                                "name": "Device disconnected",
+                                "priority": "HIGH"
+                            },
+                            {
+                                "uuid": "bb127d08b9c64b40965f1ea61c64374a",
+                                "expression": "last(/UniFi Data Template/unifi.data[state])>2",
+                                "name": "Device not in \"Available\" state",
+                                "opdata": "{ITEM.LASTVALUE}",
+                                "priority": "INFO"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "88b4f308d6b54b968a760860c1924b07",
+                        "name": "Firmware update available",
+                        "type": "TRAP",
+                        "key": "unifi.data[upgradable]",
+                        "delay": "0",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "triggers": [
+                            {
+                                "uuid": "577429e64d3f46aba7f8926d4ed9a57c",
+                                "expression": "find(/UniFi Data Template/unifi.data[upgradable],,\"like\",\"No\")=0",
+                                "name": "Firmware upgrade available",
+                                "opdata": "{ITEM.LASTVALUE}"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "1e019fec1d0141b0b5fc0cd6d14fd0bc",
+                        "name": "Uptime",
+                        "type": "TRAP",
+                        "key": "unifi.data[uptime]",
+                        "delay": "0",
+                        "units": "s",
+                        "triggers": [
+                            {
+                                "uuid": "32efd3658395485b8012c8d615a4aa7c",
+                                "expression": "last(/UniFi Data Template/unifi.data[uptime])<10m",
+                                "name": "Device has been restarted",
+                                "opdata": "{ITEM.LASTVALUE}",
+                                "priority": "WARNING"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a37d8b33535240f9afc667ef6be19ea3",
+                        "name": "Clients",
+                        "type": "TRAP",
+                        "key": "unifi.data[usercount]",
+                        "delay": "0"
+                    }
+                ],
+                "valuemaps": [
+                    {
+                        "uuid": "568e4d84a7aa48e28c7d4ec35271ca80",
+                        "name": "Device Model",
+                        "mappings": [
+                            {
+                                "value": "BZ2",
+                                "newvalue": "Access Point"
+                            },
+                            {
+                                "value": "BZ2LR",
+                                "newvalue": "Access Point Long-Range"
+                            },
+                            {
+                                "value": "p2N",
+                                "newvalue": "PicoStation M2 HP"
+                            },
+                            {
+                                "value": "S216150",
+                                "newvalue": "Switch 16 PoE (150 W)"
+                            },
+                            {
+                                "value": "S224250",
+                                "newvalue": "Switch 24 PoE (250 W)"
+                            },
+                            {
+                                "value": "S224500",
+                                "newvalue": "Switch 24 PoE (500 W)"
+                            },
+                            {
+                                "value": "S248500",
+                                "newvalue": "Switch 48 PoE (500 W)"
+                            },
+                            {
+                                "value": "S248750",
+                                "newvalue": "Switch 48 PoE (750 W)"
+                            },
+                            {
+                                "value": "S28150",
+                                "newvalue": "Switch 8 PoE (150 W)"
+                            },
+                            {
+                                "value": "U2HSR",
+                                "newvalue": "Access Point Outdoor+"
+                            },
+                            {
+                                "value": "U2IW",
+                                "newvalue": "Access Point In-Wall"
+                            },
+                            {
+                                "value": "U2L48",
+                                "newvalue": "Access Point Long-Range"
+                            },
+                            {
+                                "value": "U2Lv2",
+                                "newvalue": "Access Point Long-Range"
+                            },
+                            {
+                                "value": "U2M",
+                                "newvalue": "Access Point Mini"
+                            },
+                            {
+                                "value": "U2O",
+                                "newvalue": "Access Point Outdoor"
+                            },
+                            {
+                                "value": "U2S48",
+                                "newvalue": "Access Point"
+                            },
+                            {
+                                "value": "U2Sv2",
+                                "newvalue": "Access Point"
+                            },
+                            {
+                                "value": "U5O",
+                                "newvalue": "Access Point Outdoor 5"
+                            },
+                            {
+                                "value": "U6ENT",
+                                "newvalue": "Access Point WiFi 6 Enterprise"
+                            },
+                            {
+                                "value": "U6EXT",
+                                "newvalue": "Access Point WiFi 6 Extender"
+                            },
+                            {
+                                "value": "U6IW",
+                                "newvalue": "Access Point WiFi 6 In-Wall"
+                            },
+                            {
+                                "value": "U6M",
+                                "newvalue": "Access Point WiFi 6 Mesh"
+                            },
+                            {
+                                "value": "U7E",
+                                "newvalue": "Access Point AC"
+                            },
+                            {
+                                "value": "U7EDU",
+                                "newvalue": "Access Point AC EDU"
+                            },
+                            {
+                                "value": "U7Ev2",
+                                "newvalue": "Access Point AC"
+                            },
+                            {
+                                "value": "U7HD",
+                                "newvalue": "Access Point AC HD"
+                            },
+                            {
+                                "value": "U7IW",
+                                "newvalue": "Access Point AC In-Wall"
+                            },
+                            {
+                                "value": "U7IWP",
+                                "newvalue": "Access Point AC In-Wall Pro"
+                            },
+                            {
+                                "value": "U7LR",
+                                "newvalue": "Access Point AC Long-Range"
+                            },
+                            {
+                                "value": "U7LT",
+                                "newvalue": "Access Point AC Lite"
+                            },
+                            {
+                                "value": "U7MP",
+                                "newvalue": "Access Point AC Mesh Pro"
+                            },
+                            {
+                                "value": "U7MSH",
+                                "newvalue": "Access Point AC Mesh"
+                            },
+                            {
+                                "value": "U7NHD",
+                                "newvalue": "Access Point nanoHD"
+                            },
+                            {
+                                "value": "U7O",
+                                "newvalue": "Access Point AC Outdoor"
+                            },
+                            {
+                                "value": "U7P",
+                                "newvalue": "Access Point AC Pro"
+                            },
+                            {
+                                "value": "U7PG2",
+                                "newvalue": "Access Point AC Pro"
+                            },
+                            {
+                                "value": "U7SHD",
+                                "newvalue": "Access Point AC SHD"
+                            },
+                            {
+                                "value": "UAE6",
+                                "newvalue": "Access Point WiFi 6 Extender"
+                            },
+                            {
+                                "value": "UAIW6",
+                                "newvalue": "Access Point WiFi 6 In-Wall"
+                            },
+                            {
+                                "value": "UAL6",
+                                "newvalue": "Access Point WiFi 6 Lite"
+                            },
+                            {
+                                "value": "UALR6",
+                                "newvalue": "Access Point WiFi 6 Long-Range"
+                            },
+                            {
+                                "value": "UALR6v2",
+                                "newvalue": "Access Point WiFi 6 Long-Range"
+                            },
+                            {
+                                "value": "UALR6v3",
+                                "newvalue": "Access Point WiFi 6 Long-Range"
+                            },
+                            {
+                                "value": "UAM6",
+                                "newvalue": "Access Point WiFi 6 Mesh"
+                            },
+                            {
+                                "value": "UAP6",
+                                "newvalue": "Access Point WiFi 6 Long-Range"
+                            },
+                            {
+                                "value": "UAP6MP",
+                                "newvalue": "Access Point WiFi 6 Pro"
+                            },
+                            {
+                                "value": "UASXG",
+                                "newvalue": "Application Server XG"
+                            },
+                            {
+                                "value": "UBB",
+                                "newvalue": "Building-to-Building Bridge"
+                            },
+                            {
+                                "value": "UBBXG",
+                                "newvalue": "Building-to-Building Bridge XG"
+                            },
+                            {
+                                "value": "UCK",
+                                "newvalue": "Cloud Key"
+                            },
+                            {
+                                "value": "UCKG2",
+                                "newvalue": "Cloud Key Gen2"
+                            },
+                            {
+                                "value": "UCKP",
+                                "newvalue": "Cloud Key Gen2 Plus"
+                            },
+                            {
+                                "value": "UCK-v2",
+                                "newvalue": "Cloud Key"
+                            },
+                            {
+                                "value": "UCK-v3",
+                                "newvalue": "Cloud Key"
+                            },
+                            {
+                                "value": "UCMSH",
+                                "newvalue": "Access Point Mesh XG"
+                            },
+                            {
+                                "value": "UCXG",
+                                "newvalue": "Access Point XG"
+                            },
+                            {
+                                "value": "UDC48X6",
+                                "newvalue": "Switch Leaf"
+                            },
+                            {
+                                "value": "UDM",
+                                "newvalue": "Dream Machine"
+                            },
+                            {
+                                "value": "UDMB",
+                                "newvalue": "Access Point BeaconHD"
+                            },
+                            {
+                                "value": "UDMPRO",
+                                "newvalue": "Dream Machine Pro"
+                            },
+                            {
+                                "value": "UDMPROSE",
+                                "newvalue": "Dream Machine Special Edition"
+                            },
+                            {
+                                "value": "UDR",
+                                "newvalue": "Dream Router"
+                            },
+                            {
+                                "value": "UDW",
+                                "newvalue": "Dream Wall"
+                            },
+                            {
+                                "value": "UDWPRO",
+                                "newvalue": "Dream Wall Pro"
+                            },
+                            {
+                                "value": "UFLHD",
+                                "newvalue": "Access Point FlexHD"
+                            },
+                            {
+                                "value": "UGW3",
+                                "newvalue": "Security Gateway"
+                            },
+                            {
+                                "value": "UGW4",
+                                "newvalue": "Security Gateway Pro"
+                            },
+                            {
+                                "value": "UGWHD4",
+                                "newvalue": "Security Gateway"
+                            },
+                            {
+                                "value": "UGWXG",
+                                "newvalue": "Security Gateway XG"
+                            },
+                            {
+                                "value": "UHDIW",
+                                "newvalue": "Access Point In-Wall HD"
+                            },
+                            {
+                                "value": "ULTE",
+                                "newvalue": "UniFi LTE"
+                            },
+                            {
+                                "value": "ULTEPEU",
+                                "newvalue": "UniFi LTE Pro"
+                            },
+                            {
+                                "value": "ULTEPUS",
+                                "newvalue": "UniFi LTE Pro"
+                            },
+                            {
+                                "value": "UP1",
+                                "newvalue": "SmartPower Plug"
+                            },
+                            {
+                                "value": "UP4",
+                                "newvalue": "Phone"
+                            },
+                            {
+                                "value": "UP5",
+                                "newvalue": "Phone"
+                            },
+                            {
+                                "value": "UP5c",
+                                "newvalue": "Phone"
+                            },
+                            {
+                                "value": "UP5t",
+                                "newvalue": "Phone Professional"
+                            },
+                            {
+                                "value": "UP5tc",
+                                "newvalue": "Phone Professional"
+                            },
+                            {
+                                "value": "UP6",
+                                "newvalue": "SmartPower Strip (6 ports)"
+                            },
+                            {
+                                "value": "UP7",
+                                "newvalue": "Phone Executive"
+                            },
+                            {
+                                "value": "UP7c",
+                                "newvalue": "Phone Executive"
+                            },
+                            {
+                                "value": "US16P150",
+                                "newvalue": "Switch 16 PoE (150 W)"
+                            },
+                            {
+                                "value": "US24",
+                                "newvalue": "Switch 24"
+                            },
+                            {
+                                "value": "US24P250",
+                                "newvalue": "Switch 24 PoE (250 W)"
+                            },
+                            {
+                                "value": "US24P500",
+                                "newvalue": "Switch 24 PoE (500 W)"
+                            },
+                            {
+                                "value": "US24PL2",
+                                "newvalue": "Switch 24 PoE"
+                            },
+                            {
+                                "value": "US24PRO",
+                                "newvalue": "Switch Pro 24 PoE"
+                            },
+                            {
+                                "value": "US24PRO2",
+                                "newvalue": "Switch Pro 24"
+                            },
+                            {
+                                "value": "US48",
+                                "newvalue": "Switch 48"
+                            },
+                            {
+                                "value": "US48P500",
+                                "newvalue": "Switch 48 PoE (500 W)"
+                            },
+                            {
+                                "value": "US48P750",
+                                "newvalue": "Switch 48 PoE (750 W)"
+                            },
+                            {
+                                "value": "US48PL2",
+                                "newvalue": "Switch 48 PoE"
+                            },
+                            {
+                                "value": "US48PRO",
+                                "newvalue": "Switch Pro 48 PoE"
+                            },
+                            {
+                                "value": "US48PRO2",
+                                "newvalue": "Switch Pro 48"
+                            },
+                            {
+                                "value": "US624P",
+                                "newvalue": "Switch Enterprise 24 PoE"
+                            },
+                            {
+                                "value": "US648P",
+                                "newvalue": "Switch Enterprise 48 PoE"
+                            },
+                            {
+                                "value": "US68P",
+                                "newvalue": "Switch Enterprise 8 PoE"
+                            },
+                            {
+                                "value": "US6XG150",
+                                "newvalue": "Switch 6 XG PoE"
+                            },
+                            {
+                                "value": "US8",
+                                "newvalue": "Switch 8"
+                            },
+                            {
+                                "value": "US8P150",
+                                "newvalue": "Switch 8 PoE (150 W)"
+                            },
+                            {
+                                "value": "US8P60",
+                                "newvalue": "Switch 8 (60 W)"
+                            },
+                            {
+                                "value": "USAGGPRO",
+                                "newvalue": "Switch Aggregation Pro"
+                            },
+                            {
+                                "value": "USC8",
+                                "newvalue": "Switch 8"
+                            },
+                            {
+                                "value": "USC8P150",
+                                "newvalue": "Switch 8 PoE (150 W)"
+                            },
+                            {
+                                "value": "USC8P450",
+                                "newvalue": "Switch Industrial"
+                            },
+                            {
+                                "value": "USC8P60",
+                                "newvalue": "Switch 8 (60 W)"
+                            },
+                            {
+                                "value": "USF5P",
+                                "newvalue": "Switch Flex"
+                            },
+                            {
+                                "value": "USFXG",
+                                "newvalue": "Switch Flex XG"
+                            },
+                            {
+                                "value": "USL16LP",
+                                "newvalue": "Switch Lite 16 PoE"
+                            },
+                            {
+                                "value": "USL16P",
+                                "newvalue": "Switch 16 PoE"
+                            },
+                            {
+                                "value": "USL24",
+                                "newvalue": "Switch 24"
+                            },
+                            {
+                                "value": "USL24P",
+                                "newvalue": "Switch 24 PoE"
+                            },
+                            {
+                                "value": "USL48",
+                                "newvalue": "Switch 48"
+                            },
+                            {
+                                "value": "USL48P",
+                                "newvalue": "Switch 48 PoE"
+                            },
+                            {
+                                "value": "USL8A",
+                                "newvalue": "Switch Aggregation"
+                            },
+                            {
+                                "value": "USL8LP",
+                                "newvalue": "Switch Lite 8 PoE"
+                            },
+                            {
+                                "value": "USL8MP",
+                                "newvalue": "Switch Mission Critical"
+                            },
+                            {
+                                "value": "USMINI",
+                                "newvalue": "Switch Flex Mini"
+                            },
+                            {
+                                "value": "USPPDUP",
+                                "newvalue": "SmartPower PDU Pro"
+                            },
+                            {
+                                "value": "USPRPS",
+                                "newvalue": "SmartPower Redundant Power System"
+                            },
+                            {
+                                "value": "USXG",
+                                "newvalue": "Switch XG 16"
+                            },
+                            {
+                                "value": "USXG24",
+                                "newvalue": "Switch Enterprise XG 24"
+                            },
+                            {
+                                "value": "UXBSDM",
+                                "newvalue": "WiFi BaseStation XG"
+                            },
+                            {
+                                "value": "UXGPRO",
+                                "newvalue": "Next-Generation Gateway Pro"
+                            },
+                            {
+                                "value": "UXSDM",
+                                "newvalue": "WiFi BaseStation XG"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "c215a9e940144bb6aa1c4da68cc1fcbc",
+                        "name": "Device State",
+                        "mappings": [
+                            {
+                                "value": "0",
+                                "newvalue": "Disconnected"
+                            },
+                            {
+                                "value": "1",
+                                "newvalue": "Available"
+                            },
+                            {
+                                "value": "2",
+                                "newvalue": "Pending Adoption"
+                            },
+                            {
+                                "value": "4",
+                                "newvalue": "Updating"
+                            },
+                            {
+                                "value": "5",
+                                "newvalue": "Provisioning"
+                            },
+                            {
+                                "value": "6",
+                                "newvalue": "Isolated"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "13ff542825454825aab1729e91a20b1d",
+                        "name": "Logical",
+                        "mappings": [
+                            {
+                                "value": "1",
+                                "newvalue": "Yes"
+                            },
+                            {
+                                "value": "0",
+                                "newvalue": "No"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "e77c959a1e0c4364a17b773a21cbd8b7",
+                "template": "UniFi Discovery and Collection Template",
+                "name": "UniFi Discovery and Collection Template",
+                "description": "\u041c\u043e\u0436\u043d\u043e \u043b\u0438\u0431\u043e \u0440\u0443\u043a\u0430\u043c\u0438 \u0432 \u043c\u0430\u043a\u0440\u043e\u0441\u0430\u0445 \u0443\u043a\u0430\u0437\u0430\u0442\u044c \u0430\u0434\u0440\u0435\u0441 \u0441\u0435\u0440\u0432\u0435\u0440\u0430, \u043b\u0438\u0431\u043e \u0432 \u043f\u0440\u0430\u0432\u0438\u043b\u0435 \u043e\u0431\u043d\u0430\u0440\u0443\u0436\u0435\u043d\u0438\u044f \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u043c\u0430\u043a\u0440\u043e\u0441 \u0447\u0435\u043c-\u0442\u043e \u0432\u0440\u043e\u0434\u0435 {HOST.CONN}",
+                "groups": [
+                    {
+                        "name": "Templates"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "eb8d5ef22bbc423ea829254408448a70",
+                        "name": "UniFi Site Discover Source",
+                        "type": "SCRIPT",
+                        "key": "unifi.site.discover[source]",
+                        "delay": "8h",
+                        "trends": "0",
+                        "value_type": "CHAR",
+                        "params": "try {\n   var params = JSON.parse(value),\n   req = new HttpRequest(),\n   fields = {},\n   resp,\n   server = params.server,\n   port = params.port;\n\n   req.addHeader('Content-Type: application/json');\n   req.addHeader('Accept: application/json');\n   fields.username = params.username;\n   fields.password = params.password;\n\n   req.post(\"https://\" + server + \":\" + port + \"/api/login\", JSON.stringify(fields));\n   resp = req.get(\"https://\" + server + \":\" + port + \"/api/self/sites\");\n   req.post(\"https://\" + server + \":\" + port + \"/api/logout\");\n   return resp;\n//   return req.getStatus();\n}\ncatch (error) {\n   return {'error.name' : error.name, 'error.message' : error.message}\n}",
+                        "preprocessing": [
+                            {
+                                "type": "JSONPATH",
+                                "parameters": [
+                                    "$.data"
+                                ]
+                            }
+                        ],
+                        "parameters": [
+                            {
+                                "name": "password",
+                                "value": "{$UNIFI_PASSWORD}"
+                            },
+                            {
+                                "name": "port",
+                                "value": "{$UNIFI_PORT}"
+                            },
+                            {
+                                "name": "server",
+                                "value": "{$UNIFI_SERVER}"
+                            },
+                            {
+                                "name": "username",
+                                "value": "{$UNIFI_USERNAME}"
+                            }
+                        ],
+                        "tags": [
+                            {
+                                "tag": "Application",
+                                "value": "UniFi"
+                            }
+                        ]
+                    }
+                ],
+                "discovery_rules": [
+                    {
+                        "uuid": "4c9a1113c66d4ae99566b98097cce7ce",
+                        "name": "Unifi Devices Discover",
+                        "key": "unifi.device.discover[{$UNIFI_SERVER},{$UNIFI_PORT},{$UNIFI_USERNAME},{$UNIFI_PASSWORD}]",
+                        "delay": "8h",
+                        "lifetime": "7d",
+                        "host_prototypes": [
+                            {
+                                "uuid": "be151c3e28e84e499ded0c65e909e1d4",
+                                "host": "UniFi_{#DEVICEID}",
+                                "name": "{#DEVICENAME} ({#DEVICEMAC})",
+                                "group_links": [
+                                    {
+                                        "group": {
+                                            "name": "UniFi Device Discovery"
+                                        }
+                                    }
+                                ],
+                                "group_prototypes": [
+                                    {
+                                        "name": "{#SITEDESC}"
+                                    }
+                                ],
+                                "templates": [
+                                    {
+                                        "name": "UniFi Data Template"
+                                    }
+                                ],
+                                "tags": [
+                                    {
+                                        "tag": "Application",
+                                        "value": "UniFi"
+                                    }
+                                ],
+                                "custom_interfaces": "YES",
+                                "interfaces": [
+                                    {
+                                        "type": "SNMP",
+                                        "ip": "{#DEVICEIP}",
+                                        "port": "161",
+                                        "details": {
+                                            "community": "{$SNMP_COMMUNITY}"
+                                        }
+                                    }
+                                ],
+                                "inventory_mode": "AUTOMATIC"
+                            }
+                        ]
+                    },
+                    {
+                        "uuid": "a13337994ccb46d3bc223ac9286f065a",
+                        "name": "UniFi Site Discover",
+                        "type": "DEPENDENT",
+                        "key": "unifi.site.discover",
+                        "delay": "0",
+                        "lifetime": "7d",
+                        "item_prototypes": [
+                            {
+                                "uuid": "bb0ea80b19d0431e825053c9867a08e1",
+                                "name": "Unifi Site - {#SITE_DESC}",
+                                "key": "unifi.device.data[{$UNIFI_SERVER},{$UNIFI_PORT},{$UNIFI_USERNAME},{$UNIFI_PASSWORD},{#SITE_NAME}]",
+                                "delay": "5m",
+                                "history": "7d",
+                                "units": "devices",
+                                "tags": [
+                                    {
+                                        "tag": "Application",
+                                        "value": "UniFi"
+                                    }
+                                ]
+                            }
+                        ],
+                        "master_item": {
+                            "key": "unifi.site.discover[source]"
+                        },
+                        "lld_macro_paths": [
+                            {
+                                "lld_macro": "{#SITE_DESC}",
+                                "path": "$.desc"
+                            },
+                            {
+                                "lld_macro": "{#SITE_NAME}",
+                                "path": "$.name"
+                            }
+                        ]
+                    }
+                ],
+                "macros": [
+                    {
+                        "macro": "{$UNIFI_PASSWORD}",
+                        "type": "SECRET_TEXT"
+                    },
+                    {
+                        "macro": "{$UNIFI_PORT}",
+                        "value": "8443"
+                    },
+                    {
+                        "macro": "{$UNIFI_SERVER}",
+                        "value": "127.0.0.1"
+                    },
+                    {
+                        "macro": "{$UNIFI_USERNAME}",
+                        "value": "root"
+                    }
+                ]
+            }
+        ]
+    }
+}
