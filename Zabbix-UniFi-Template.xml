@@ -1040,18 +1040,22 @@ catch (error) {
                 <macro>
                     <macro>{$UNIFI_PASSWORD}</macro>
                     <type>SECRET_TEXT</type>
+                    <description>Пароль пользователя для подключения к контроллеру UniFi</description>
                 </macro>
                 <macro>
                     <macro>{$UNIFI_PORT}</macro>
                     <value>8443</value>
+                    <description>Порт подключения к контроллеру. По умолчанию - 8443</description>
                 </macro>
                 <macro>
                     <macro>{$UNIFI_SERVER}</macro>
                     <value>127.0.0.1</value>
+                    <description>Адрес контроллера UniFi</description>
                 </macro>
                 <macro>
                     <macro>{$UNIFI_USERNAME}</macro>
                     <value>root</value>
+                    <description>Имя пользователя для подключения к контроллеру UniFi</description>
                 </macro>
             </macros>
         </template>

@@ -633,9 +633,13 @@ zabbix_export:
       macros:
         - macro: '{$UNIFI_PASSWORD}'
           type: SECRET_TEXT
+          description: 'Пароль пользователя для подключения к контроллеру UniFi'
         - macro: '{$UNIFI_PORT}'
           value: '8443'
+          description: 'Порт подключения к контроллеру. По умолчанию - 8443'
         - macro: '{$UNIFI_SERVER}'
           value: 127.0.0.1
+          description: 'Адрес контроллера UniFi'
         - macro: '{$UNIFI_USERNAME}'
           value: root
+          description: 'Имя пользователя для подключения к контроллеру UniFi'
