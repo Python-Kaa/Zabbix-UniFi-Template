@@ -11,7 +11,6 @@ import os
 # Получаем аргументы командной строки
 def createParser ():
     parser = argparse.ArgumentParser()
-    # parser.add_argument ('-n', '--name', default='мир')
     parser.add_argument ('-item', default = '')
     parser.add_argument ('-mac', default = '')
     parser.add_argument ('-site', default = '')
