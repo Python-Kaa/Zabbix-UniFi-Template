@@ -97,7 +97,10 @@ else:
             # Отправлям всю эту помойку в Zabbix
             os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[state] -o ' + str(device['state']), buffering=-1)
             os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[model] -o ' + str(device['model']), buffering=-1)
-            os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[serial] -o ' + str(device['serial']), buffering=-1)
+            try:
+                os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[serial] -o ' + str(device['serial']), buffering=-1)
+            except Exception:
+                os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[serial] -o ------------', buffering=-1)
             os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[model_in_eol] -o ' + str(device['model_in_eol']), buffering=-1)
             os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[adopted] -o ' + str(device['adopted']), buffering=-1)
             os.popen(sender_path + ' -z ' + namespace.zabbix + ' -s ' + device_id + ' -k unifi.data[devicetype] -o "' + str(device_types[device['type']]) + '"', buffering=-1)
